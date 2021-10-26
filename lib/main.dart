@@ -52,29 +52,9 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text("Lis of Stolen Bikes")),
 
-          body: Container(
-            width: size.width,
-            height: size.height,
-            child: Column(
-              children: <Widget>[
-                Expanded(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                           width: size.width,
-                           height: size.height ,
-                            child:  ShowBikeRun(_bike)
-                          )
+          body: ShowBikeRun(_bike)
 
-                        ],
-                      ),
-                    ))
-              ],
-            ),
-          )
-    );
-
+          );
 
 }
 
